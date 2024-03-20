@@ -97,10 +97,10 @@ if __name__ == "__main__":
 
     print('\t Старт потоков')
     sum_use_threading(arr)
-
+    sum_arr = 0
     print('\t Старт процессов')
     sum_with_process(arr)
-
+    sum_arr = 0
     print('\t Старт асинхронного метода')
     start_time = time.time()
     loop = asyncio.get_event_loop()  # получили цикл событий
